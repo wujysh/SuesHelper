@@ -24,6 +24,7 @@ class InfosController < ApplicationController
 
   # POST /infos
   # POST /infos.json
+  skip_before_filter :verify_authenticity_token
   def create
     @info = Info.new(info_params)
 

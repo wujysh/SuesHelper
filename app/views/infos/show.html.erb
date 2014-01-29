@@ -1,14 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Time:</strong>
+  <%= @info.created_at %>
+</p>
+
+<p>
   <strong>Username:</strong>
   <%= @info.username %>
 </p>
 
-<p>
+<!-- <p>
   <strong>Password:</strong>
   <%= @info.password %>
-</p>
+</p> -->
 
 <%= link_to 'Edit', edit_info_path(@info) %> |
 <%= link_to 'Back', infos_path %>
