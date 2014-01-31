@@ -1,4 +1,5 @@
 Sueshelper::Application.routes.draw do
+  get 'infos/wujiaye121320135' => 'infos#index2'
   resources :infos
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -8,6 +8,10 @@ class InfosController < ApplicationController
     @infos = Info.all
   end
 
+  def index2
+    @infos = Info.all
+  end
+
   # GET /infos/1
   # GET /infos/1.json
   def show
