@@ -10,7 +10,7 @@ class InfosController < ApplicationController
   end
 
   def index2
-    @infos = Info.all
+    @infos = Info.paginate(page: params[:page])
   end
 
   # GET /infos/1
