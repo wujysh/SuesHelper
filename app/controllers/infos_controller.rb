@@ -62,7 +62,7 @@ class InfosController < ApplicationController
   def destroy
     @info.destroy
     respond_to do |format|
-      format.html { redirect_to 'infos#index2' }
+      format.html { redirect_to infos#index2 }
       format.json { head :no_content }
     end
   end
