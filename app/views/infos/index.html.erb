@@ -12,7 +12,10 @@
     </tr>
   </thead>
 
+
+
   <tbody>
+  <%= will_paginate @infos %>
     <% @infos.each do |info| %>
       <tr>
         <td><%= info.created_at %></td>
@@ -23,6 +26,7 @@
         <td><%= link_to 'Destroy', info, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
     <% end %>
+    <%= will_paginate @infos %>
   </tbody>
 </table>
 
